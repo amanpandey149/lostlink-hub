@@ -1,0 +1,12 @@
+{
+    "name": "lost-and-found-root",
+    "version": "1.0.0",
+    "description": "Root package to run both client and server",
+    "scripts": {
+        "install-all": "npm install && npm install --prefix client && npm install --prefix server",
+        "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}
